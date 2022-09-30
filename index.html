@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mphtools-feature" content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck">
     <title>INTERDISCIPLINARIO</title>
 </head>
 <body>
@@ -42,33 +43,33 @@
         ctx.putImageData(imageData, 100, 0);//la posicion en pantalla de la camara
         
 });
-window.addEventListener(CY.modules().FACE_EMOTION.eventName, (evt) => {//Otro evento q detecta emocion de la cara
-  console.log('Emotion result', evt.detail);
+    window.addEventListener(CY.modules().FACE_EMOTION.eventName, (evt) => {//Otro evento q detecta emocion de la cara
+    console.log('Emotion result', evt.detail);
 
-var contador=evt.detail.output.emotion['Angry']*100;  
-document.getElementById("angry").innerHTML = evt.detail.output.emotion['Angry']*100;
+    var contador=evt.detail.output.emotion['Angry']*100;  
+    document.getElementById("angry").innerHTML = evt.detail.output.emotion['Angry']*100;
 
-document.getElementById("disgust").innerHTML = evt.detail.output.emotion['Disgust']*100;
-contador+=evt.detail.output.emotion['Disgust']*100;
+    document.getElementById("disgust").innerHTML = evt.detail.output.emotion['Disgust']*100;
+    contador+=evt.detail.output.emotion['Disgust']*100;
 
-document.getElementById("fear").innerHTML = evt.detail.output.emotion['Fear']*100;
-contador+=evt.detail.output.emotion['Fear']*100;
-
-
-document.getElementById("happy").innerHTML = evt.detail.output.emotion['Happy']*100;
-contador+=evt.detail.output.emotion['Happy']*100;
-
-document.getElementById("neutral").innerHTML = evt.detail.output.emotion['Neutral']*100;
-contador+=evt.detail.output.emotion['Neutral']*100;
+    document.getElementById("fear").innerHTML = evt.detail.output.emotion['Fear']*100;
+    contador+=evt.detail.output.emotion['Fear']*100;
 
 
-document.getElementById("sad").innerHTML = evt.detail.output.emotion['Sad']*100;
-contador+=evt.detail.output.emotion['Sad']*100;
+    document.getElementById("happy").innerHTML = evt.detail.output.emotion['Happy']*100;
+    contador+=evt.detail.output.emotion['Happy']*100;
 
-document.getElementById("surprise").innerHTML = evt.detail.output.emotion['Surprise']*100;
-contador+=evt.detail.output.emotion['Surprise']*100;
+    document.getElementById("neutral").innerHTML = evt.detail.output.emotion['Neutral']*100;
+    contador+=evt.detail.output.emotion['Neutral']*100;
 
-document.getElementById("total").innerHTML = contador;
+
+    document.getElementById("sad").innerHTML = evt.detail.output.emotion['Sad']*100;
+    contador+=evt.detail.output.emotion['Sad']*100;
+
+    document.getElementById("surprise").innerHTML = evt.detail.output.emotion['Surprise']*100;
+    contador+=evt.detail.output.emotion['Surprise']*100;
+
+    document.getElementById("total").innerHTML = contador;
 
 
 });
