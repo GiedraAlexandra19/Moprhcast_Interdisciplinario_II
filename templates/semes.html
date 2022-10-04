@@ -1,43 +1,39 @@
-{% extends "layout.html" %}
-{% block body %}
-<br>
-<a href="/Form1/1"><button type="submit" class="btn btn-primary btn-block" >
-    1er Semestre
-</button></a>
-<br>
-<a href="/Form1/2"><button type="submit" class="btn btn-primary btn-block" >
-    2do Semestre
-</button></a>
-<br>
-<a href="/Form1/3"><button type="submit" class="btn btn-primary btn-block" >
-    3er Semestre
-</button></a>
-<br>
-<a href="/Form1/4"><button type="submit" class="btn btn-primary btn-block" >
-    4to Semestre
-</button></a>
-<br>
-<a href="/Form1/5"><button type="submit" class="btn btn-primary btn-block" >
-    5to Semestre
-</button></a>
-<br>
-<a href="/Form1/6"><button type="submit" class="btn btn-primary btn-block" >
-    6to Semestre
-</button></a>
-<br>
-<a href="/Form1/7"><button type="submit" class="btn btn-primary btn-block" >
-    7mo Semestre
-</button></a>
-<br>
-<a href="/Form1/8"><button type="submit" class="btn btn-primary btn-block" >
-    8vo Semestre
-</button></a>
-<br>
-<a href="/Form1/9"><button type="submit" class="btn btn-primary btn-block" >
-    9no Semestre
-</button></a>
-<br>
-<a href="/Form1/10"><button type="submit" class="btn btn-primary btn-block" >
-    10mo Semestre
-</button></a>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script> 
+    <script>
+        var contAngry=0;
+        var contDisgust=0;
+        var contFear=0;
+        var contHappy=0;
+        var contNeutral=0;
+        var contSad=0;
+        var contSurprise=0;
+    </script>
+    <title>INTERDISCIPLINARIO</title>
+</head>
+<body>
+
+    % angry: <p id="angry"></p>
+    % disgust: <p id="disgust"></p>
+    % fear: <p id="fear"></p>
+    % happy: <p id="happy"></p>
+    % neutral: <p id="neutral"></p>
+    % sad: <p id="sad"></p>
+    % surprise: <p id="surprise"></p>
+    %total:<p id="total"> </p>
+    Frecuencia Angry <p id="freAngry"></p>
+    Frecuencia Disgust <p id="freDisgust"></p>
+    Frecuencia Fear <p id="freFear"></p>
+    Frecuencia Happy <p id="freHappy"></p>
+    Frecuencia Neutral <p id="freNeutral"></p>
+    Frecuencia Sad <p id="freSad"></p>
+    Frecuencia Surprise <p id="freSurprise"></p>
+
+<script src="/static/js/morp.js"></script>
+</body>
+</html>
