@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/barraAnimada.css">
     <script src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script> 
+    <script src="/static/js/a.js"></script>
     <script>
         var contAngry=0;
         var contDisgust=0;
@@ -13,12 +15,13 @@
         var contNeutral=0;
         var contSad=0;
         var contSurprise=0;
+        var todo=0;
     </script>
     <title>INTERDISCIPLINARIO</title>
 </head>
-<body>
+<body >
 
-    % angry: <p id="angry"></p>
+    % angry: <p id="angry"></p> 
     % disgust: <p id="disgust"></p>
     % fear: <p id="fear"></p>
     % happy: <p id="happy"></p>
@@ -26,14 +29,60 @@
     % sad: <p id="sad"></p>
     % surprise: <p id="surprise"></p>
     %total:<p id="total"> </p>
-    Frecuencia Angry <p id="freAngry"></p>
-    Frecuencia Disgust <p id="freDisgust"></p>
-    Frecuencia Fear <p id="freFear"></p>
-    Frecuencia Happy <p id="freHappy"></p>
-    Frecuencia Neutral <p id="freNeutral"></p>
-    Frecuencia Sad <p id="freSad"></p>
-    Frecuencia Surprise <p id="freSurprise"></p>
+    
+    <div class="habilidades">
+        <p>Frecuencia Angry <span id="freAngry"></span></p>
+        <div class="container">
+            <div id="utilizadoAngry" class="skills htmlAngry"></div>
+        </div>
+    </div>
 
-<script src="/static/js/morp.js"></script>
+    <div class="habilidades">
+        <p>Frecuencia Disgust <span id="freDisgust"></span></p>
+        <div class="container">
+            <div id="utilizadoDisgust" class="skills htmlDisgust"></div>
+        </div>
+    </div>
+
+    <div class="habilidades">
+        <p>Frecuencia Fear <span id="freFear"></span></p>
+        <div class="container">
+            <div id="utilizadoFear" class="skills htmlFear"></div>
+        </div>
+    </div>
+    
+    <div class="habilidades">
+        <p>Frecuencia Happy <span id="freHappy"></span></p>
+        <div class="container">
+            <div id="utilizadoHappy" class="skills htmlHappy"></div>
+        </div>
+    </div>
+    
+    <div class="habilidades">
+        <p>Frecuencia Neutral <span id="freNeutral"></span></p>
+        <div class="container">
+            <div id="utilizadoNeutral" class="skills htmlNeutral"></div>
+        </div>
+    </div>
+
+    <div class="habilidades">
+        <p>Frecuencia Sad <span id="freSad"></span></p>
+        <div class="container">
+            <div id="utilizadoSad" class="skills htmlSad"></div>
+        </div>
+    </div>
+    
+    <div class="habilidades">
+        <p>Frecuencia Surprise <span id="freSurprise"></span></p>
+        <div class="container">
+            <div id="utilizadoSurprise" class="skills htmlSurprise"></div>
+        </div>
+    </div>
+
+    
+    <button id="detener"> Detener</button>
+    
+
+    <script src="/static/js/morp.js"></script>
 </body>
 </html>

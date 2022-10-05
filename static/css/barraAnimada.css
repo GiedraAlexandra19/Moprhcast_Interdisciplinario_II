@@ -1,0 +1,115 @@
+body{
+    background-color: white;
+}
+.habilidades{
+    width: 600px;
+    margin:auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.container{
+    width: 100%;
+    
+    background-color: #ddd;
+}
+.skills{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    
+}
+.htmlAngry{
+    background-color: rgb(195,0,203);
+    animation: fillhtmlAngry 2s forwards;
+    --offsetAngry:0px;
+}
+.htmlDisgust{
+    background-color: rgb(195,0,203);
+    animation: fillhtmlDisgust 2s forwards;
+    --offsetDisgust:0px;
+}
+.htmlFear{
+    background-color: rgb(195,0,203);
+    animation: fillhtmlFear 2s forwards;
+    --offsetFear:0px;
+}
+.htmlHappy{
+    background-color: rgb(195,0,203);
+    animation: fillhtmlHappy 2s forwards;
+    --offsetHappy:0px;
+}
+.htmlNeutral{
+    background-color: rgb(195,0,203);
+    animation: fillhtmlNeutral 2s forwards;
+    --offsetNeutral:0px;
+}
+.htmlSad{
+    background-color: rgb(195,0,203);
+    animation: fillhtmlSad 2s forwards;
+    --offsetSad:0px;
+}
+.htmlSurprise{
+    background-color: rgb(195,0,203);
+    animation: fillhtmlSurprise 2s forwards;
+    --offsetSurprise:0px;
+}
+@keyframes fillhtmlAngry{
+    0%{
+        width:0;
+    }
+    100%{
+        width:var(--offsetAngry);
+    }
+}
+@keyframes fillhtmlDisgust{
+    0%{
+        width:0;
+    }
+    100%{
+        width:var(--offsetDisgust);
+    }
+}
+@keyframes fillhtmlFear{
+    0%{
+        width:0;
+    }
+    100%{
+        width:var(--offsetFear);
+    }
+}
+@keyframes fillhtmlHappy{
+    0%{
+        width:0;
+    }
+    100%{
+        width:var(--offsetHappy);
+    }
+}
+@keyframes fillhtmlNeutral{
+    0%{
+        width:0;
+    }
+    100%{
+        width:var(--offsetNeutral);
+    }
+}
+@keyframes fillhtmlSad{
+    0%{
+        width:0;
+    }
+    100%{
+        width:var(--offsetSad);
+    }
+}
+@keyframes fillhtmlSurprise{
+    0%{
+        width:0;
+    }
+    100%{
+        width:var(--offsetSurprise);
+    }
+}
+/*
+*/
+
