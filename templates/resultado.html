@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/barraAnimada.css">
+    <script src="/static/js/a.js"></script>
+    
+    <title>Document</title>
+</head>
+
+<body onload="porcentBarra(`{{_lista[0]}}`,`{{_lista[1]}}`,`{{_lista[2]}}`,`{{_lista[3]}}`,`{{_lista[4]}}`,`{{_lista[5]}}`,`{{_lista[6]}}`);anchoBarra(`{{_lista[0]}}`,`{{_lista[1]}}`,`{{_lista[2]}}`,`{{_lista[3]}}`,`{{_lista[4]}}`,`{{_lista[5]}}`,`{{_lista[6]}}`);">
+    <h1>Resultados de la Prueba</h1>
+    <div class="habilidades">
+        <p>Frecuencia Angry <span id="freAngry">{{_lista[0]}}</span></p>
+        <div class="container">
+            <div id="utilizadoAngry" class="skills htmlAngry"></div>
+        </div>
+    </div>
+    <div class="habilidades">
+        <p>Frecuencia Disgust <span id="freDisgust">{{_lista[1]}}</span></p>
+        <div class="container">
+            <div id="utilizadoDisgust" class="skills htmlDisgust"></div>
+        </div>
+    </div>
+ 
+    <div class="habilidades">
+        <p>Frecuencia Fear <span id="freFear">{{_lista[2]}}</span></p>
+        <div class="container">
+            <div id="utilizadoFear" class="skills htmlFear"></div>
+        </div>
+    </div>
+   
+    <div class="habilidades">
+        <p>Frecuencia Happy <span id="freHappy">{{_lista[3]}}</span></p>
+        <div class="container">
+            <div id="utilizadoHappy" class="skills htmlHappy"></div>
+        </div>
+    </div>
+   
+    <div class="habilidades">
+        <p>Frecuencia Neutral <span id="freNeutral">{{_lista[4]}}</span></p>
+        <div class="container">
+            <div id="utilizadoNeutral" class="skills htmlNeutral"></div>
+        </div>
+    </div>
+ 
+    <div class="habilidades">
+        <p>Frecuencia Sad <span id="freSad">{{_lista[5]}}</span></p>
+        <div class="container">
+            <div id="utilizadoSad" class="skills htmlSad"></div>
+        </div>
+    </div>
+   
+    <div class="habilidades">
+        <p>Frecuencia Surprise <span id="freSurprise">{{_lista[6]}}</span></p>
+        <div class="container">
+            <div id="utilizadoSurprise" class="skills htmlSurprise"></div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

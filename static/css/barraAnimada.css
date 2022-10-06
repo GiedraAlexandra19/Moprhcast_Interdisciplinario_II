@@ -1,5 +1,12 @@
 body{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+}
+#detener{
+    position: relative;
+    left: 400px;top: -30px;
+    width: 150px;height: 50px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .habilidades{
     width: 600px;
@@ -54,6 +61,7 @@ body{
     animation: fillhtmlSurprise 2s forwards;
     --offsetSurprise:0px;
 }
+
 @keyframes fillhtmlAngry{
     0%{
         width:0;

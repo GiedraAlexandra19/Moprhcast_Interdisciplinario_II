@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_mysqldb import MySQL,MySQLdb
-
+import js2py
 
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = 'localhost'
@@ -18,7 +18,28 @@ def home():
 @app.route('/ingreso',methods=["GET","POST"])
 def ingreso():
     return render_template('login.html')
-
+@app.route('/calculoEmociones', methods = ['POST'])
+def calculoEmociones():
+    #code_2 = "function f() {return contHappy;}"
+    #res_2 = js2py.eval_js(code_2)
+    lista = []
+    _feAngry = request.form['enviarAngry']
+    _feDisgust = request.form['enviarDisgust']
+    _feFear = request.form['enviarFear']
+    _feHappy = request.form['enviarHappy']
+    _feNeutral = request.form['enviarNeutral']
+    _feSad = request.form['enviarSad']
+    _feSurprise = request.form['enviarSurprise']
+    lista.append(_feAngry)
+    lista.append(_feDisgust)
+    lista.append(_feFear)
+    lista.append(_feHappy)
+    lista.append(_feNeutral)
+    lista.append(_feSad)
+    lista.append(_feSurprise)
+    print(lista)
+    #_feHappy=res_2()                       #feAngry=_feAngry,feDisgust=_feDisgust,feFear=_feFear,feHappy=_feHappy,feNeutral=_feNeutral,feSad=_feSad,feSurprise=_feSurprise
+    return render_template('resultado.html',_lista=lista)
 @app.route('/semestres',methods=["GET","POST"])
 def semestres():
     if request.method == 'POST':
