@@ -3,7 +3,7 @@ onload="anchoBarra(contHappy/100);porcentBarra(contHappy,100)"
 */
 function porcentBarra(contAngry,contDisgust,contFear,contHappy,contNeutral,contSad,contSurprise){//parte/t
     var t=parseInt(contAngry)+parseInt(contDisgust)+parseInt(contFear)+parseInt(contHappy)+parseInt(contNeutral)+parseInt(contSad)+parseInt(contSurprise);
-    alert(contAngry);
+    //alert(contAngry);
     const pAngry = document.getElementById("utilizadoAngry");
     const pDisgust = document.getElementById("utilizadoDisgust");
     const pFear = document.getElementById("utilizadoFear");
@@ -31,7 +31,7 @@ function porcentBarra(contAngry,contDisgust,contFear,contHappy,contNeutral,contS
 }      
 
 function anchoBarra(contAngry,contDisgust,contFear,contHappy,contNeutral,contSad,contSurprise){
-    alert(contAngry+"hahaha");
+    //alert(contAngry+"hahaha");
     var t=parseInt(contAngry)+parseInt(contDisgust)+parseInt(contFear)+parseInt(contHappy)+parseInt(contNeutral)+parseInt(contSad)+parseInt(contSurprise);
     const elementAngry = document.querySelector(".htmlAngry");
     const elementDisgust = document.querySelector(".htmlDisgust");
@@ -40,7 +40,7 @@ function anchoBarra(contAngry,contDisgust,contFear,contHappy,contNeutral,contSad
     const elementNeutral = document.querySelector(".htmlNeutral");
     const elementSad = document.querySelector(".htmlSad");
     const elementSurprise = document.querySelector(".htmlSurprise");
-    alert(t+"haashaha");
+    //alert(t+"haashaha");
     elementAngry.style.setProperty("--offsetAngry",contAngry/t*580+"px");//580 es el ancho de la barra
     elementDisgust.style.setProperty("--offsetDisgust",contDisgust/t*580+"px");//580 es el ancho de la barra
     elementFear.style.setProperty("--offsetFear",contFear/t*580+"px");//580 es el ancho de la barra

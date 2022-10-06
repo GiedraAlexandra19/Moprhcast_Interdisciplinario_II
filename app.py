@@ -15,6 +15,10 @@ app.secret_key='mysecretkey'
 def home():
     return redirect(url_for('ingreso'))
 
+@app.route('/irSemes')
+def irSemes():
+    return render_template('semes.html')
+
 @app.route('/ingreso',methods=["GET","POST"])
 def ingreso():
     return render_template('login.html')
