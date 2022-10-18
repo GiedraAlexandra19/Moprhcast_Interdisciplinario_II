@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"><!--https://www.morphcast.com/wp-content/themes/morphcast/dist/images/morphcast-intro-light_0b88c4f2.jpg-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/barraAnimada.css">
+    <link rel="stylesheet" href="/static/css/fondoBody.css">
     <script src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script>
     
     <script>
@@ -33,7 +34,9 @@
  
    -->
     <div id="encabezado">
-        <h1>Registro emocion dominante</h1>
+        <h1 id="tituloRegistro">
+            <div class="containerTitulo"><span id="registroTitulo">Registro emocion dominante</span></div>
+        </h1>
         <script src="/static/js/morp.js"></script>
     </div>
    
@@ -85,7 +88,7 @@
             <div id="utilizadoSurprise" class="skills htmlSurprise"></div>
         </div>
     </div>
-    Resultado:
+    <!--Resultado:-->
     
     <div id="resultado"></div>
     <form id="ja"  action="/calculoEmociones" method="post" onsubmit="agregar();">
@@ -111,8 +114,9 @@
             <div class="col_100">
                 <input class="campos" id="enviarSurprise" name="enviarSurprise" type="text" placeholder="Surprise...">
             </div>
-            <a ><button id="detener" type="submit"> Detener</button></a>
+            
         </div>
+        <a ><button id="detener" type="submit"> Detener</button></a>
     </form>
     
     

@@ -22,8 +22,15 @@ const config = {smoothness: 0.40};//Inicia >0 y <1
         const imageData = event.detail;
         ctx.canvas.width = imageData.width;
         ctx.canvas.height = imageData.height;
-        ctx.putImageData(imageData, 100, 0);//la posicion en pantalla de la camara
+        
+        ctx.putImageData(imageData, 0, -10);//la posicion en pantalla de la camara
         //console.log('Face detector result', evt.detail);
+        
+        
+    // var x = event.clientX - rect.left;
+    // var y = event.clientY - rect.top;
+
+    
 });
     window.addEventListener(CY.modules().FACE_EMOTION.eventName, (evt) => {//Otro evento q detecta emocion de la cara
         //var feliza=0;
