@@ -1,0 +1,36 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/da/11/8d/da118dc0f0827c85913aac0759f1e4b3.jpg");
+    color: white;
+}
+#titulo{
+    position: relative;
+    font-size: 40px;
+    left: 400px;
+}
+.habilidades{
+    position: relative;left: -140px;top: 80px;
+    width: 600px;
+    margin:auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.habilidades1{
+    position: relative;left: 540px;top: -250px;
+    width: 600px;
+    margin:auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.habilidades2{
+    position: relative;left: 100px;top: -185px;
+    width: 600px;
+    margin:auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#regreso{
+    position: relative;
+    top: -600px;left: 100px;
+    width: 150px;
+    height: 50px;
+}
